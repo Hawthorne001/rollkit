@@ -1,3 +1,4 @@
+//nolint:unused
 package node
 
 import (
@@ -88,7 +89,8 @@ func getTestConfig(t *testing.T, n int) rollkitconfig.Config {
 		RPC: rollkitconfig.RPCConfig{
 			Address: fmt.Sprintf("127.0.0.1:%d", 8000+n),
 		},
-		ChainID: "test-chain",
+		ChainID:         "test-chain",
+		Instrumentation: &rollkitconfig.InstrumentationConfig{},
 	}
 }
 
@@ -122,6 +124,7 @@ func newTestNode(
 		ds,
 		DefaultMetricsProvider(rollkitconfig.DefaultInstrumentationConfig()),
 		log.NewTestLogger(t),
+		nil,
 	)
 	require.NoError(t, err)
 
@@ -186,6 +189,7 @@ func createNodesWithCleanup(t *testing.T, num int, config rollkitconfig.Config) 
 		ds,
 		DefaultMetricsProvider(rollkitconfig.DefaultInstrumentationConfig()),
 		log.NewTestLogger(t),
+		nil,
 	)
 	require.NoError(err)
 
@@ -223,6 +227,7 @@ func createNodesWithCleanup(t *testing.T, num int, config rollkitconfig.Config) 
 			dssync.MutexWrap(datastore.NewMapDatastore()),
 			DefaultMetricsProvider(rollkitconfig.DefaultInstrumentationConfig()),
 			log.NewTestLogger(t),
+			nil,
 		)
 		require.NoError(err)
 		// Update cleanup to cancel the context instead of calling Stop
