@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771659674982,
+  "lastUpdate": 1771659683325,
   "repoUrl": "https://github.com/Hawthorne001/rollkit",
   "entries": {
     "EVM Contract Roundtrip": [
@@ -96,6 +96,104 @@ window.BENCHMARK_DATA = {
             "value": 11470,
             "unit": "allocs/op",
             "extra": "2 times\n4 procs"
+          }
+        ]
+      }
+    ],
+    "Block Executor Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "alpe@users.noreply.github.com",
+            "name": "Alexander Peters",
+            "username": "alpe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05ce69eed18a39e6851f362f27797e1e188e91af",
+          "message": "test: phase1 benchmarks (#3081)\n\n* Introduce phase1 benchmark\n\n* Bench refactor\n\n* bench: fix monotonically-increasing timestamp + add 100-tx case",
+          "timestamp": "2026-02-19T17:20:33+01:00",
+          "tree_id": "3d5412d9ac6ef97e584e4dc4bdea730e21f02545",
+          "url": "https://github.com/Hawthorne001/rollkit/commit/05ce69eed18a39e6851f362f27797e1e188e91af"
+        },
+        "date": 1771659682882,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkProduceBlock/100_txs",
+            "value": 144460,
+            "unit": "ns/op\t   46991 B/op\t     277 allocs/op",
+            "extra": "7582 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - ns/op",
+            "value": 144460,
+            "unit": "ns/op",
+            "extra": "7582 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - B/op",
+            "value": 46991,
+            "unit": "B/op",
+            "extra": "7582 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - allocs/op",
+            "value": 277,
+            "unit": "allocs/op",
+            "extra": "7582 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch",
+            "value": 125864,
+            "unit": "ns/op\t   10815 B/op\t     154 allocs/op",
+            "extra": "10000 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - ns/op",
+            "value": 125864,
+            "unit": "ns/op",
+            "extra": "10000 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - B/op",
+            "value": 10815,
+            "unit": "B/op",
+            "extra": "10000 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - allocs/op",
+            "value": 154,
+            "unit": "allocs/op",
+            "extra": "10000 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx",
+            "value": 120585,
+            "unit": "ns/op\t   11409 B/op\t     170 allocs/op",
+            "extra": "9498 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - ns/op",
+            "value": 120585,
+            "unit": "ns/op",
+            "extra": "9498 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - B/op",
+            "value": 11409,
+            "unit": "B/op",
+            "extra": "9498 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - allocs/op",
+            "value": 170,
+            "unit": "allocs/op",
+            "extra": "9498 times\n4 procs"
           }
         ]
       }
