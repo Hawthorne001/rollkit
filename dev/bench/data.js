@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771724673475,
+  "lastUpdate": 1771724682827,
   "repoUrl": "https://github.com/Hawthorne001/rollkit",
   "entries": {
     "EVM Contract Roundtrip": [
@@ -242,6 +242,102 @@ window.BENCHMARK_DATA = {
             "value": 170,
             "unit": "allocs/op",
             "extra": "9498 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alpe@users.noreply.github.com",
+            "name": "Alexander Peters",
+            "username": "alpe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce184847d2e3a610967f70b27ddae3e075b77e97",
+          "message": "perf: optimize block creation (#3093)\n\n* Introduce phase1 benchmark\n\n* Bench refactor\n\n* bench: fix monotonically-increasing timestamp + add 100-tx case\n\n* shot1\n\n* x\n\n* y\n\n* cgo\n\n* z\n\n* Revert proto changes and interface\n\n* Remove unecessay caches\n\n* Save pending\n\n* test: add 100-transaction benchmark for block production and simplify executor comments.\n\n* refactor: remove `ValidateBlock` method and simplify state validation logic.\n\n* Extract last block info",
+          "timestamp": "2026-02-20T15:47:35+01:00",
+          "tree_id": "d590f22cec34019392dd991cf9c67b2c8d67b1f7",
+          "url": "https://github.com/Hawthorne001/rollkit/commit/ce184847d2e3a610967f70b27ddae3e075b77e97"
+        },
+        "date": 1771724682145,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkProduceBlock/single_tx",
+            "value": 38011,
+            "unit": "ns/op\t    7449 B/op\t      81 allocs/op",
+            "extra": "32052 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - ns/op",
+            "value": 38011,
+            "unit": "ns/op",
+            "extra": "32052 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - B/op",
+            "value": 7449,
+            "unit": "B/op",
+            "extra": "32052 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - allocs/op",
+            "value": 81,
+            "unit": "allocs/op",
+            "extra": "32052 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs",
+            "value": 48654,
+            "unit": "ns/op\t   26154 B/op\t      81 allocs/op",
+            "extra": "25101 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - ns/op",
+            "value": 48654,
+            "unit": "ns/op",
+            "extra": "25101 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - B/op",
+            "value": 26154,
+            "unit": "B/op",
+            "extra": "25101 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - allocs/op",
+            "value": 81,
+            "unit": "allocs/op",
+            "extra": "25101 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch",
+            "value": 38757,
+            "unit": "ns/op\t    7002 B/op\t      71 allocs/op",
+            "extra": "32322 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - ns/op",
+            "value": 38757,
+            "unit": "ns/op",
+            "extra": "32322 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - B/op",
+            "value": 7002,
+            "unit": "B/op",
+            "extra": "32322 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - allocs/op",
+            "value": 71,
+            "unit": "allocs/op",
+            "extra": "32322 times\n4 procs"
           }
         ]
       }
