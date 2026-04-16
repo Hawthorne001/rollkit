@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771941802913,
+  "lastUpdate": 1776324715446,
   "repoUrl": "https://github.com/Hawthorne001/rollkit",
   "entries": {
     "EVM Contract Roundtrip": [
@@ -190,6 +190,54 @@ window.BENCHMARK_DATA = {
           {
             "name": "BenchmarkEvmContractRoundtrip - allocs/op",
             "value": 11717,
+            "unit": "allocs/op",
+            "extra": "2 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "julien@rbrt.fr",
+            "name": "julienrbrt",
+            "username": "julienrbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50a73fbe1e5bd927e2b1d0a313ba1d6fc6c4be92",
+          "message": "build: Add build recipes for gRPC binary (#3250)",
+          "timestamp": "2026-04-14T09:31:35+02:00",
+          "tree_id": "3acf8d0f9ff689facb86b8c7fedd27a37394307d",
+          "url": "https://github.com/Hawthorne001/rollkit/commit/50a73fbe1e5bd927e2b1d0a313ba1d6fc6c4be92"
+        },
+        "date": 1776324714163,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkEvmContractRoundtrip",
+            "value": 918759598,
+            "unit": "ns/op\t33455828 B/op\t  190920 allocs/op",
+            "extra": "2 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkEvmContractRoundtrip - ns/op",
+            "value": 918759598,
+            "unit": "ns/op",
+            "extra": "2 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkEvmContractRoundtrip - B/op",
+            "value": 33455828,
+            "unit": "B/op",
+            "extra": "2 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkEvmContractRoundtrip - allocs/op",
+            "value": 190920,
             "unit": "allocs/op",
             "extra": "2 times\n4 procs"
           }
