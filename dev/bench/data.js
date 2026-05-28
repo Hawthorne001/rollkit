@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779965575155,
+  "lastUpdate": 1779965576752,
   "repoUrl": "https://github.com/Hawthorne001/rollkit",
   "entries": {
     "EVM Contract Roundtrip": [
@@ -818,6 +818,102 @@ window.BENCHMARK_DATA = {
             "value": 54,
             "unit": "allocs/op",
             "extra": "25597 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3791c1dff59f890d947bd1b73d0905f76cd34e13",
+          "message": "build(deps): Bump the all-go group across 2 directories with 7 updates (#3333)\n\n* build(deps): Bump the all-go group across 2 directories with 7 updates\n\nBumps the all-go group with 7 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [connectrpc.com/connect](https://github.com/connectrpc/connect-go) | `1.19.2` | `1.20.0` |\n| [github.com/aws/aws-sdk-go-v2/config](https://github.com/aws/aws-sdk-go-v2) | `1.32.17` | `1.32.18` |\n| [github.com/aws/aws-sdk-go-v2/service/kms](https://github.com/aws/aws-sdk-go-v2) | `1.51.1` | `1.52.0` |\n| [github.com/libp2p/go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht) | `0.39.2` | `0.40.0` |\n| [golang.org/x/crypto](https://github.com/golang/crypto) | `0.51.0` | `0.52.0` |\n| [golang.org/x/net](https://github.com/golang/net) | `0.54.0` | `0.55.0` |\n| [google.golang.org/api](https://github.com/googleapis/google-api-go-client) | `0.279.0` | `0.280.0` |\n\nBumps the all-go group with 2 updates in the /execution/grpc directory: [connectrpc.com/connect](https://github.com/connectrpc/connect-go) and [golang.org/x/net](https://github.com/golang/net).\n\n\nUpdates `connectrpc.com/connect` from 1.19.2 to 1.20.0\n- [Release notes](https://github.com/connectrpc/connect-go/releases)\n- [Changelog](https://github.com/connectrpc/connect-go/blob/main/RELEASE.md)\n- [Commits](https://github.com/connectrpc/connect-go/compare/v1.19.2...v1.20.0)\n\nUpdates `github.com/aws/aws-sdk-go-v2/config` from 1.32.17 to 1.32.18\n- [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)\n- [Commits](https://github.com/aws/aws-sdk-go-v2/compare/config/v1.32.17...config/v1.32.18)\n\nUpdates `github.com/aws/aws-sdk-go-v2/service/kms` from 1.51.1 to 1.52.0\n- [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)\n- [Commits](https://github.com/aws/aws-sdk-go-v2/compare/service/s3/v1.51.1...service/s3/v1.52.0)\n\nUpdates `github.com/libp2p/go-libp2p-kad-dht` from 0.39.2 to 0.40.0\n- [Release notes](https://github.com/libp2p/go-libp2p-kad-dht/releases)\n- [Commits](https://github.com/libp2p/go-libp2p-kad-dht/compare/v0.39.2...v0.40.0)\n\nUpdates `golang.org/x/crypto` from 0.51.0 to 0.52.0\n- [Commits](https://github.com/golang/crypto/compare/v0.51.0...v0.52.0)\n\nUpdates `golang.org/x/net` from 0.54.0 to 0.55.0\n- [Commits](https://github.com/golang/net/compare/v0.54.0...v0.55.0)\n\nUpdates `google.golang.org/api` from 0.279.0 to 0.280.0\n- [Release notes](https://github.com/googleapis/google-api-go-client/releases)\n- [Changelog](https://github.com/googleapis/google-api-go-client/blob/main/CHANGES.md)\n- [Commits](https://github.com/googleapis/google-api-go-client/compare/v0.279.0...v0.280.0)\n\nUpdates `connectrpc.com/connect` from 1.19.2 to 1.20.0\n- [Release notes](https://github.com/connectrpc/connect-go/releases)\n- [Changelog](https://github.com/connectrpc/connect-go/blob/main/RELEASE.md)\n- [Commits](https://github.com/connectrpc/connect-go/compare/v1.19.2...v1.20.0)\n\nUpdates `golang.org/x/net` from 0.54.0 to 0.55.0\n- [Commits](https://github.com/golang/net/compare/v0.54.0...v0.55.0)\n\n---\nupdated-dependencies:\n- dependency-name: connectrpc.com/connect\n  dependency-version: 1.20.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: github.com/aws/aws-sdk-go-v2/config\n  dependency-version: 1.32.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: all-go\n- dependency-name: github.com/aws/aws-sdk-go-v2/service/kms\n  dependency-version: 1.52.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: github.com/libp2p/go-libp2p-kad-dht\n  dependency-version: 0.40.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.52.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: golang.org/x/net\n  dependency-version: 0.55.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: google.golang.org/api\n  dependency-version: 0.280.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: connectrpc.com/connect\n  dependency-version: 1.20.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n- dependency-name: golang.org/x/net\n  dependency-version: 0.55.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all-go\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: run just deps after Dependabot update\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\nCo-authored-by: julienrbrt <julien@rbrt.fr>",
+          "timestamp": "2026-05-26T10:31:12Z",
+          "tree_id": "aaf22fd62c9eac7f88cb713beb6ce859c4e17378",
+          "url": "https://github.com/Hawthorne001/rollkit/commit/3791c1dff59f890d947bd1b73d0905f76cd34e13"
+        },
+        "date": 1779965576475,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkProduceBlock/empty_batch",
+            "value": 40175,
+            "unit": "ns/op\t    4809 B/op\t      50 allocs/op",
+            "extra": "30577 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - ns/op",
+            "value": 40175,
+            "unit": "ns/op",
+            "extra": "30577 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - B/op",
+            "value": 4809,
+            "unit": "B/op",
+            "extra": "30577 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/empty_batch - allocs/op",
+            "value": 50,
+            "unit": "allocs/op",
+            "extra": "30577 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx",
+            "value": 40770,
+            "unit": "ns/op\t    5032 B/op\t      54 allocs/op",
+            "extra": "29479 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - ns/op",
+            "value": 40770,
+            "unit": "ns/op",
+            "extra": "29479 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - B/op",
+            "value": 5032,
+            "unit": "B/op",
+            "extra": "29479 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/single_tx - allocs/op",
+            "value": 54,
+            "unit": "allocs/op",
+            "extra": "29479 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs",
+            "value": 47372,
+            "unit": "ns/op\t   10325 B/op\t      54 allocs/op",
+            "extra": "25735 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - ns/op",
+            "value": 47372,
+            "unit": "ns/op",
+            "extra": "25735 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - B/op",
+            "value": 10325,
+            "unit": "B/op",
+            "extra": "25735 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkProduceBlock/100_txs - allocs/op",
+            "value": 54,
+            "unit": "allocs/op",
+            "extra": "25735 times\n4 procs"
           }
         ]
       }
